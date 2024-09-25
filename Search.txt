@@ -1,0 +1,15 @@
+Use the Database Manager
+/iis/extensions/database-manager/use-the-database-manager
+Add a Connection String to a Web Application To add a new connection using a connection string: Open the Internet Information Services (IIS) Manager In the Connections view, select the site, application, or virtual directory to which you would like to add a connection string Figure 1: Features View In the Features View, double-click on the Connecti...
+
+Database Manager for Hosters
+/iis/web-hosting/web-server-for-shared-hosting/database-manager-for-hosters
+The connection string includes the database server, database name, and user credentials (user name and password) IIS Manager has a Connection String module that the hoster can use to provide the connection string to the customer Or the customer can enter the connection string information that is provided by the hoster The user double-clicks the Dat...
+
+Planning Step 3: Plan Data Source Settings
+/iis/application-frameworks/scenario-build-an-aspnet-website-on-iis/planning-step-3-plan-data-source-settings
+A connection string usually supplies the server or location of the database server, the particular database to use, and the authentication information A connection string enables you to connect to databases from managed code applications in a centralized manner Adding a configuration setting adds the setting at the local level and to any child leve...
+
+DatabaseProvider.CalculateConnectionString Method (Microsoft.Web.Management.DatabaseManager)
+/iis/extensions/database-manager-reference/databaseprovider-calculateconnectionstring-method-microsoft-web-management-databasemanager
+DatabaseProvider.CalculateConnectionString Method Returns the calculated connection string for the database provider Namespace: Microsoft.Web.Management.DatabaseManager Assembly: Microsoft.Web.Management.DatabaseManager (in Microsoft.Web.Management.DatabaseManager.dll) Syntax Parameters arguments Type: System.Collections.Generic.ICollection<Conne...

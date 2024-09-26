@@ -1,31 +1,37 @@
 ﻿
+using System.Text;
+
 string input = File.ReadAllText("..\\..\\..\\Search.txt");
 
-// Split the input into individual lines using a blank line (double new line) as a separator
-var sections = input.Split(new[] { "\n\n", "\r\n\r\n" }, StringSplitOptions.RemoveEmptyEntries);
+string[] lines = input.Split(new[] { Environment.NewLine }, StringSplitOptions.None);
+StringBuilder inputCleaned = new StringBuilder();
 
-Console.WriteLine($"Line count: {sections.Length}");
-
-foreach (var section in sections)
+for (int i = 0; i < lines.Length; i++)
 {
-    // Split each section into its components
-    var lines = section.Split(new[] { "\n", "\r\n" }, StringSplitOptions.RemoveEmptyEntries);
-
-    if (lines.Length >= 2)
+    if (lines[i].Contains("/aspnet/"))
     {
-        // Extract the title and URL path
-        string title = lines[0].Trim();
-        string urlPath = lines[1].Trim();
-
-        // Construct the full URL
-        string fullUrl = "https://docs.microsoft.com/en-us" + urlPath;
-
-        // Output the formatted result
-        Console.WriteLine($"- [{title}]({fullUrl})");
+        if (i > 0)
+        {
+            inputCleaned.AppendLine(lines[i - 1]);
+        }
+        inputCleaned.AppendLine(lines[i]);
     }
 }
 
+//Console.WriteLine(inputCleaned.ToString());
+//File.WriteAllText("..\\..\\..\\SearchCleaned.txt", inputCleaned.ToString());
 
+// Process the cleaned input
+string[] cleanedLines = inputCleaned.ToString().Split(new[] { Environment.NewLine }, StringSplitOptions.None);
 
+for (int i = 0; i < cleanedLines.Length; i += 2)
+{
+    if (i + 1 < cleanedLines.Length)
+    {
+        string title = cleanedLines[i].Trim();
+        string urlPath = cleanedLines[i + 1].Trim();
+        string fullUrl = "https://docs.microsoft.com/en-us" + urlPath;
 
-
+        Console.WriteLine($"- [ ] [{title}]({fullUrl})");
+    }
+}

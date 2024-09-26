@@ -1,15 +1,945 @@
-Use the Database Manager
-/iis/extensions/database-manager/use-the-database-manager
-Add a Connection String to a Web Application To add a new connection using a connection string: Open the Internet Information Services (IIS) Manager In the Connections view, select the site, application, or virtual directory to which you would like to add a connection string Figure 1: Features View In the Features View, double-click on the Connecti...
+Skip to main content
+AI Skills Challenge
+Sep 24 – Nov 1, 2024
 
-Database Manager for Hosters
-/iis/web-hosting/web-server-for-shared-hosting/database-manager-for-hosters
-The connection string includes the database server, database name, and user credentials (user name and password) IIS Manager has a Connection String module that the hoster can use to provide the connection string to the customer Or the customer can enter the connection string information that is provided by the hoster The user double-clicks the Dat...
+Learn
+Sign in
+"connection string"
+Clear all
+155 results for ""connection string"" in ASP.NET Documentation
+or view all results on Microsoft Learn
 
-Planning Step 3: Plan Data Source Settings
-/iis/application-frameworks/scenario-build-an-aspnet-website-on-iis/planning-step-3-plan-data-source-settings
-A connection string usually supplies the server or location of the database server, the particular database to use, and the authentication information A connection string enables you to connect to databases from managed code applications in a centralized manner Adding a configuration setting adds the setting at the local level and to any child leve...
+Configuring the Data Access Layer's Connection- and Command-Level Settings (VB)
+/aspnet/web-forms/overview/data-access/advanced-data-access-scenarios/configuring-the-data-access-layer-s-connection-and-command-level-settings-vb
+Note A connection string is a string that specifies database connection information, such as the provider to use, the location of the database, authentication credentials, and other database-related settings For a list of connection string patterns used by a variety of data stores and providers, see ConnectionStrings.com As discussed in the Creatin...
 
-DatabaseProvider.CalculateConnectionString Method (Microsoft.Web.Management.DatabaseManager)
-/iis/extensions/database-manager-reference/databaseprovider-calculateconnectionstring-method-microsoft-web-management-databasemanager
-DatabaseProvider.CalculateConnectionString Method Returns the calculated connection string for the database provider Namespace: Microsoft.Web.Management.DatabaseManager Assembly: Microsoft.Web.Management.DatabaseManager (in Microsoft.Web.Management.DatabaseManager.dll) Syntax Parameters arguments Type: System.Collections.Generic.ICollection<Conne...
+Creating a Connection String and Working with SQL Server LocalDB
+/aspnet/mvc/overview/getting-started/introduction/creating-a-connection-string
+The first connection string is named DefaultConnection and is used for the membership database to control who can access the application The connection string you've added specifies a LocalDB database named Movie.mdf located in the App_Data folder We won't use the membership database in this tutorial, for more information on membership, authenticat...
+
+Configuring the Data Access Layer's Connection- and Command-Level Settings (C#)
+/aspnet/web-forms/overview/data-access/advanced-data-access-scenarios/configuring-the-data-access-layer-s-connection-and-command-level-settings-cs
+Note A connection string is a string that specifies database connection information, such as the provider to use, the location of the database, authentication credentials, and other database-related settings For a list of connection string patterns used by a variety of data stores and providers, see ConnectionStrings.com As discussed in the Creatin...
+
+Introduction to Working with a Database in ASP.NET Web Pages (Razor) Sites
+/aspnet/web-pages/overview/data/5-working-with-data
+The second way is to use a connection string A connection string contains information about how to connect to a database This can include a file path, or it can include the name of a SQL Server database on a local or remote server, along with a user name and password to connect to that server (If you keep data in a centrally managed version of SQL ...
+
+Configuring Parameters for Web Package Deployment
+/aspnet/web-forms/overview/deployment/web-deployment-in-the-enterprise/configuring-parameters-for-web-package-deployment
+The ApplicationServices-Web.config Connection String parameter was generated from a connectionStrings/add element in the web.config file It represents the connection string that the application should use to contact the membership database The value you provide here will be substituted into the deployed web.config file The default value is taken fr...
+
+Manually Installing Web Packages
+/aspnet/web-forms/overview/deployment/web-deployment-in-the-enterprise/manually-installing-web-packages
+The first Connection String setting is the connection string that Web Deploy should use to deploy the database associated with the application (in this case an ASP.NET membership database) This setting corresponds to the setting on the Package/Publish SQL tab in Visual Studio The second Connection String setting is the connection string that your a...
+
+Querying Data with the SqlDataSource Control (C#)
+/aspnet/web-forms/overview/data-access/accessing-the-database-directly-from-an-aspnet-page/querying-data-with-the-sqldatasource-control-cs
+To reference a connection string value in Web.config, use the syntax <%$ expressionPrefix:expressionValue %> Typically, expressionPrefix is ConnectionStrings and expressionValue is the name of the connect string in the Web.config <connectionStrings> section However, the syntax can be used to reference <appSettings> elements or content from resource...
+
+Tutorial: Get Started with Entity Framework 6 Code First using MVC 5
+/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application
+Specify the connection string The name of the connection string (which you'll add to the Web.config file later) is passed in to the constructor You could also pass in the connection string itself instead of the name of one that is stored in the Web.config file For more information about options for specifying the database to use, see Connection str...
+
+Protecting Connection Strings and Other Configuration Information (VB)
+/aspnet/web-forms/overview/data-access/advanced-data-access-scenarios/protecting-connection-strings-and-other-configuration-information-vb
+With Windows authentication the connection string is free from a username and password and if the web server and database server reside on two different machines, the credentials are not sent over the network in plain-text With SQL authentication, however, the authentication credentials are hard-coded in the connection string and are transmitted fr...
+
+ASP.NET Identity: Using MySQL Storage with an EntityFramework MySQL Provider (C#) - ASP.NET 4.x
+/aspnet/identity/overview/getting-started/aspnet-identity-using-mysql-storage-with-an-entityframework-mysql-provider
+the MySQL provider: Locate the <connectionStrings> section and replace it with the following code, which will define the connection string for your MySQL database that is hosted on Azure (note that providerName value has also been changed from the original): Adding custom MigrationHistory context Entity Framework Code First uses a MigrationHistory ...
+
+...
+Previous Versions
+Blog
+Contribute
+Privacy
+Terms of Use
+Trademarks
+© Microsoft 2024
+Skip to main content
+AI Skills Challenge
+Sep 24 – Nov 1, 2024
+
+Learn
+Sign in
+"connection string"
+Clear all
+155 results for ""connection string"" in ASP.NET Documentation
+or view all results on Microsoft Learn
+
+Protecting Connection Strings and Other Configuration Information (C#)
+/aspnet/web-forms/overview/data-access/advanced-data-access-scenarios/protecting-connection-strings-and-other-configuration-information-cs
+With Windows authentication the connection string is free from a username and password and if the web server and database server reside on two different machines, the credentials are not sent over the network in plain-text With SQL authentication, however, the authentication credentials are hard-coded in the connection string and are transmitted fr...
+
+Deploying an ASP.NET Web Application with SQL Server Compact using Visual Studio or Visual Web Developer: Migrating to SQL Server - 10 of 12
+/aspnet/web-forms/overview/older-versions-getting-started/deployment-to-a-hosting-provider/deployment-to-a-hosting-provider-migrating-to-sql-server-10-of-12
+In Connection string for destination database, enter a connection string that points to the new SQL Server Express membership database You can get the connection string you need from Server Explorer In Server Explorer, expand Data Connections and select the aspnetTest database, then from the Properties window copy the Connection String value The sa...
+
+Adding a Model 2012
+/aspnet/mvc/overview/older-versions/getting-started-with-aspnet-mvc4/adding-a-model
+Add the following connection string to the <connectionStrings> element in the Web.config file The following example shows a portion of the Web.config file with the new connection string added: This small amount of code and XML is everything you need to write in order to represent and store the movie data in a database Next, you'll build a new Movie...
+
+Create the Data Access Layer
+/aspnet/web-forms/overview/getting-started/getting-started-with-aspnet-45-web-forms/create_the_data_access_layer
+By adding a new connection string, you can direct the location of the database (wingtiptoys.mdf) to be built in the application's data directory (App_Data), rather than its default location Making this change will allow you to find and inspect the database file later in this tutorial In Solution Explorer, find and open the Web.config file Add the c...
+
+Creating the Membership Schema in SQL Server (C#)
+/aspnet/web-forms/overview/older-versions-security/membership/creating-the-membership-schema-in-sql-server-cs
+If you are using the non-Express Edition of SQL Server, you should already know this information, as it is the same information you must provide through a connection string when working with the database through an ASP.NET web page Determining the server and database name when using a SQL Server 2005 Express Edition database in the App_Data folder,...
+
+Configuring Deployment Properties for a Target Environment
+/aspnet/web-forms/overview/deployment/configuring-server-environments-for-web-deployment/configuring-deployment-properties-for-a-target-environment
+The connection string determines both the credentials that VSDBCMD will use to contact the database server and create the database and the credentials that the web server application pool will use to contact the database server and interact with the database Essentially you have two choices here You can specify Integrated Security=true, in which ca...
+
+Adding a Model (VB)
+/aspnet/mvc/overview/older-versions/getting-started-with-aspnet-mvc3/vb/adding-a-model
+Add the following connection string to the <connectionStrings> element in the Web.config file The following example shows a portion of the Web.config file with the new connection string added: This small amount of code and XML is everything you need to write in order to represent and store the movie data in a database Next, you'll build a new Movie...
+
+Creating the Membership Schema in SQL Server (VB)
+/aspnet/web-forms/overview/older-versions-security/membership/creating-the-membership-schema-in-sql-server-vb
+If you are using the non-Express Edition of SQL Server, you should already know this information, as it is the same information you must provide through a connection string when working with the database through an ASP.NET web page Determining the server and database name when using a SQL Server 2005 Express Edition database in the App_Data folder,...
+
+Adding a Model (C#)
+/aspnet/mvc/overview/older-versions/getting-started-with-aspnet-mvc3/cs/adding-a-model
+Add the following connection string to the <connectionStrings> element in the Web.config file The following example shows a portion of the Web.config file with the new connection string added: This small amount of code and XML is everything you need to write in order to represent and store the movie data in a database Next, you'll build a new Movie...
+
+SignalR Scaleout with Azure Service Bus
+/aspnet/signalr/overview/performance/scaleout-with-windows-azure-service-bus
+Configure the Backplane In your application's Startup.cs file, add the following code: Now you need to get your service bus connection string In the Azure portal, select the service bus namespace that you created and click the Access Key icon Copy the connection string to the clipboard, then paste it into the connectionString variable Deploy to Azu...
+
+...
+Previous Versions
+Blog
+Contribute
+Privacy
+Terms of Use
+Trademarks
+© Microsoft 2024
+155 results for ""connection string"" in ASP.NET Documentation
+Skip to main content
+AI Skills Challenge
+Sep 24 – Nov 1, 2024
+
+Learn
+Sign in
+"connection string"
+Clear all
+155 results for ""connection string"" in ASP.NET Documentation
+or view all results on Microsoft Learn
+
+SignalR Scaleout with Azure Service Bus
+/aspnet/signalr/overview/performance/scaleout-with-windows-azure-service-bus
+Configure the Backplane In your application's Startup.cs file, add the following code: Now you need to get your service bus connection string In the Azure portal, select the service bus namespace that you created and click the Access Key icon Copy the connection string to the clipboard, then paste it into the connectionString variable Deploy to Azu...
+
+Deploying an ASP.NET Web Application with SQL Server Compact using Visual Studio or Visual Web Developer: Web.Config File Transformations - 3 of 12
+/aspnet/web-forms/overview/older-versions-getting-started/deployment-to-a-hosting-provider/deployment-to-a-hosting-provider-web-config-file-transformations-3-of-12
+Setting Connection Strings In most cases you do not need to set up connection string transformations, because you can specify connection strings in the publish profile But there is an exception when you're deploying a SQL Server Compact database and you're using Entity Framework Code First Migrations to update the database on the destination server...
+
+Creating an Entity Framework Data Model for an ASP.NET MVC Application (1 of 10)
+/aspnet/mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application
+Open the root Web.config file and add a new connection string to the connectionStrings collection, as shown in the following example (Make sure you update the Web.config file in the root project folder There's also a Web.config file is in the Views subfolder that you don't need to update.) By default, the Entity Framework looks for a connection str...
+
+ASP.NET Web Deployment using Visual Studio: Web.config File Transformations
+/aspnet/web-forms/overview/deployment/visual-studio-web-deployment/web-config-transformations
+Setting connection strings Although the default transform file contains an example that shows how to update a connection string, in most cases you do not need to set up connection string transformations, because you can specify connection strings in the publish profile You'll do that in the deploy to IIS and deploy to production tutorials Summary Y...
+
+Store ASP.NET SQL Server mode session state - ASP.NET
+/troubleshoot/developer/webapps/aspnet/development/configure-sql-store-session-state
+Set the sqlConnectionString attribute to specify the connection string for SQL Server For example: Note The user, <user name>, must have permissions to perform this operation on the database The modified <sessionState> element should appear as follows: Note Ensure that you use the correct case when you specify the <sessionState> element and the ass...
+
+Adding ASP.NET Identity to an Empty or Existing Web Forms Project - ASP.NET 4.x
+/aspnet/identity/overview/getting-started/adding-aspnet-identity-to-an-empty-or-existing-web-forms-project
+The connection string is similar to one created for you when you create a new Web Forms project The highlighted code shows the markup you should add: Note For Visual Studio 2015 or higher, replace (localdb)\v11.0 with (localdb)\MSSQLLocalDB in your connection string Right click file Register.aspx in your project and select Set as Start Page Press C...
+
+Sorting, Filtering, and Paging with the Entity Framework in an ASP.NET MVC Application (3 of 10)
+/aspnet/mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/sorting-filtering-and-paging-with-the-entity-framework-in-an-asp-net-mvc-application
+The DefaultConnection connection string is for the membership database (which we are not using in this tutorial) The SchoolContext connection string is for the ContosoUniversity database You can find the deployed version of the Web.config file on your own computer in ContosoUniversity\obj\Release\Package\PackageTmp\Web.config You can access the dep...
+
+Common Configuration Differences Between Development and Production (VB)
+/aspnet/web-forms/overview/older-versions-getting-started/deploying-web-site-projects/common-configuration-differences-between-development-and-production-vb
+While it is possible to hard-code the database connection string directly in the web pages or the code that connects to the database, it is best to place it Web.config's <connectionStrings> element so that the connection string information is in a single, centralized location Oftentimes a different database is used during development than is used i...
+
+Common Configuration Differences Between Development and Production (C#)
+/aspnet/web-forms/overview/older-versions-getting-started/deploying-web-site-projects/common-configuration-differences-between-development-and-production-cs
+While it is possible to hard-code the database connection string directly in the web pages or the code that connects to the database, it is best to place it Web.config's <connectionStrings> element so that the connection string information is in a single, centralized location Oftentimes a different database is used during development than is used i...
+
+Building and Packaging Web Application Projects
+/aspnet/web-forms/overview/deployment/web-deployment-in-the-enterprise/building-and-packaging-web-application-projects
+file to allow you to modify the connection string as part of the deployment process The next topic, Configuring Parameters for Web Package Deployment, explains the role of this file in more detail and describes the different ways in which you can modify it during build and deployment Note In Visual Studio 2010, the WPP does not support precompiling...
+
+...
+Previous Versions
+Blog
+Contribute
+Privacy
+Terms of Use
+Trademarks
+© Microsoft 2024
+155 results for ""connection string"" in ASP.NET Documentation
+Skip to main content
+AI Skills Challenge
+Sep 24 – Nov 1, 2024
+
+Learn
+Sign in
+"connection string"
+Clear all
+155 results for ""connection string"" in ASP.NET Documentation
+or view all results on Microsoft Learn
+
+ASP.NET MVC Getting Started
+/aspnet/mvc/overview/getting-started/
+Getting Started with ASP.NET MVC 5 Getting Started Adding a Controller Adding a View Adding a Model Creating a Connection String and Working with SQL Server LocalDB Accessing Your Model's Data from a Controller Examining the Edit Methods and Edit View Adding Search Adding a New Field Adding Validation Examining the Details and Delete Methods Gettin...
+
+Understanding the Project File
+/aspnet/web-forms/overview/deployment/web-deployment-in-the-enterprise/understanding-the-project-file
+For example, you could define properties named ServerName and ConnectionString to store a static server name and connection string To retrieve a property value, use the format $(PropertyName) For example, to retrieve the value of the ServerName property, you would type: Note You'll see examples of how and when to use property values later in this t...
+
+Part 3: Creating an Admin Controller
+/aspnet/web-api/overview/older-versions/using-web-api-1-with-entity-framework-5/using-web-api-with-entity-framework-part-3
+A new database connection string in the Web.config file Open the OrdersContext.cs file Notice that the constructor specifies the name of the database connection string This name refers to the connection string that was added to Web.config Add the following properties to the OrdersContext class: A DbSet represents a set of entities that can be queri...
+
+ASP.NET Web Deployment using Visual Studio: Deploying to Test
+/aspnet/web-forms/overview/deployment/visual-studio-web-deployment/deploying-to-iis
+To implement this pattern in your scenario, take these steps: In the Publish Web wizard under the Settings tab, enter the connection string that specifies a user with full database schema update permissions Clear the Use this connection string at runtime check box In the deployed Web.config file, this becomes the DatabasePublish connection string C...
+
+Setting Up the Contact Manager Solution
+/aspnet/web-forms/overview/deployment/web-deployment-in-the-enterprise/setting-up-the-contact-manager-solution
+At the command prompt, type this command, and then press Enter: Use the –C switch to specify the connection string for your database server Use the –A switch to specify the application services features you want to add to the database In this case, m indicates that you want to add support for the membership provider and r indicates that you want to...
+
+Create an OData v4 Endpoint Using ASP.NET Web API 2.2
+/aspnet/web-api/overview/odata-support-in-aspnet-web-api/odata-v4/create-an-odata-v4-endpoint
+This setting adds a connection string for a LocalDB database This database will be used when you run the app locally Next, add a class named ProductsContext to the Models folder: In the constructor, "name=ProductsContext" gives the name of the connection string Configure the OData endpoint Open the file App_Start/WebApiConfig.cs. Add the following ...
+
+Membership
+/aspnet/web-forms/overview/moving-to-aspnet-20/membership
+The connection string and other properties should be set to their defaults in the Initialize method (The Initialize method is fired when the provider is loaded at runtime.) The second parameter to the Initialize method is of type System.Collections.Specialized.NameValueCollection and is a reference to the <add> element that is associated with your ...
+
+Users and Roles On The Production Website (C#)
+/aspnet/web-forms/overview/older-versions-getting-started/deploying-web-site-projects/users-and-roles-on-the-production-website-cs
+to the connection string information in order to manage the users and roles on production Most websites that support user accounts also include a number of user and role administration web pages that enable administrators to manage users and roles from pages within the site Such web-based administration pages make it much easier to manage users and...
+
+Deploying an ASP.NET Web Application with SQL Server Compact using Visual Studio or Visual Web Developer: Deploying to IIS as a Test Environment - 5 of 12
+/aspnet/web-forms/overview/older-versions-getting-started/deployment-to-a-hosting-provider/deployment-to-a-hosting-provider-deploying-to-iis-as-a-test-environment-5-of-12
+string that specifies a user with full database schema update permissions, and clear the Use this connection string at runtime check box In the deployed Web.config file, this becomes the DatabasePublish connection string Create a Web.config file transformation for the connection string that you want the application to use at run time You have now d...
+
+Authenticating Users with Forms Authentication (C#)
+/aspnet/mvc/overview/older-versions-1/security/authenticating-users-with-forms-authentication-cs
+connection string to point to your production database The first step is to add all of the necessary database objects (tables and stored procedures) to your production database The easiest way to add these objects to a new database is to take advantage of the ASP.NET SQL Server Setup Wizard (see Figure 8) You can launch this tool by opening the Vis...
+
+...
+...
+Previous Versions
+Blog
+Contribute
+Privacy
+Terms of Use
+Trademarks
+© Microsoft 2024
+155 results for ""connection string"" in ASP.NET Documentation
+Skip to main content
+AI Skills Challenge
+Sep 24 – Nov 1, 2024
+
+Learn
+Sign in
+"connection string"
+Clear all
+155 results for ""connection string"" in ASP.NET Documentation
+or view all results on Microsoft Learn
+
+Deploying passwords and other sensitive data to ASP.NET and Azure App Service - ASP.NET 4.x
+/aspnet/identity/overview/features-api/best-practices-for-deploying-passwords-and-other-sensitive-data-to-aspnet-and-azure
+The app settings and connection string values override the same settings in the web.config file In our example, we did not deploy these settings to Azure, but if these keys were in the web.config file, the settings shown on the portal would take precedence A best practice is to follow a DevOps workflow and use Azure PowerShell (or another framework...
+
+Users and Roles On The Production Website (VB)
+/aspnet/web-forms/overview/older-versions-getting-started/deploying-web-site-projects/users-and-roles-on-the-production-website-vb
+to the connection string information in order to manage the users and roles on production Most websites that support user accounts also include a number of user and role administration web pages that enable administrators to manage users and roles from pages within the site Such web-based administration pages make it much easier to manage users and...
+
+Source Control (Building Real-World Cloud Apps with Azure)
+/aspnet/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/source-control
+For example, the Fix It application stores in its Web.config file two connection strings that will have passwords in production and a key that gives access to your Azure storage account If you put actual production values for these settings in your Web.config file, or if you put them in the Web.Release.config file to configure a Web.config transfor...
+
+Deploying an ASP.NET Web Application with SQL Server Compact using Visual Studio or Visual Web Developer: Deploying a SQL Server Database Update - 11 of 12
+/aspnet/web-forms/overview/older-versions-getting-started/deployment-to-a-hosting-provider/deployment-to-a-hosting-provider-deploying-a-sql-server-database-update-11-of-12
+In the connection string drop-down list for DefaultConnection, select the Cytanium connection string Select the Profile tab, click Manage Profiles, and rename the profile from "contosouniversity.com - Web Deploy" to "Production" Close the publish profile to save the change, then open it again Click Publish (For a real production website, you would ...
+
+Getting Started with ASP.NET MVC 5 Index
+/aspnet/mvc/overview/getting-started/introduction/
+This following tutorial series covers ASP.NET MVC: Source located on GitHub Getting Started Adding a Controller Adding a View Adding a Model Creating a Connection String and Working with SQL Server LocalDB Accessing Your Model's Data from a Controller Examining the Edit Methods and Edit View Adding Search Adding a New Field Adding Validation Examin...
+
+Advanced Data Access Scenarios
+/aspnet/web-forms/overview/data-access/advanced-data-access-scenarios/
+Working with Computed Columns (C#) Configuring the Data Access Layer's Connection- and Command-Level Settings (C#) Protecting Connection Strings and Other Configuration Information (C#) Debugging Stored Procedures (C#) Creating Stored Procedures and User-Defined Functions with Managed Code (C#) Creating New Stored Procedures for the Typed DataSet's...
+
+Use ASP.NET forms-based authentication - ASP.NET
+/troubleshoot/developer/webapps/aspnet/development/forms-based-authentication
+Make sure that you change the Connection string to point to your database You can use one of two methods to generate the forms authentication cookie and redirect the user to an appropriate page in the cmdLogin_ServerClick event Sample code is provided for both scenarios Use either of them according to your requirement Call the RedirectFromLoginPage...
+
+Tutorial: Use EF Migrations in an ASP.NET MVC app and deploy to Azure
+/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/migrations-and-deployment-with-the-entity-framework-in-an-asp-net-mvc-application
+you selected the Students tab): The deployment process also created a new connection string (SchoolContext_DatabasePublish) for Code First Migrations to use for updating the database schema and seeding the database You can find the deployed version of the Web.config file on your own computer in ContosoUniversity\obj\Release\Package\PackageTmp\Web.c...
+
+Accessing Your Model's Data from a Controller Using a View Template
+/aspnet/mvc/overview/older-versions/getting-started-with-aspnet-mvc4/accessing-your-models-data-from-a-controller
+the database connection string that was provided pointed to a Movies database that didn't exist yet, so Code First created the database automatically You can verify that it's been created by looking in the App_Data folder If you don't see the Movies.mdf file, click the Show All Files button in the Solution Explorer toolbar, click the Refresh button...
+
+Adding a New Model
+/aspnet/mvc/overview/getting-started/introduction/adding-a-model
+We've finally added a model (the M in MVC) In the next section you'll work with the database connection string Previous Next In this section, you'll add some classes for managing movies in a database These classes will be the model part of the ASP.NET MVC app.. /aspnet/mvc/overview/getting-started/introduction/adding-a-model. Adding a New Model by...
+
+...
+...
+Previous Versions
+Blog
+Contribute
+Privacy
+Terms of Use
+Trademarks
+© Microsoft 2024
+155 results for ""connection string"" in ASP.NET Documentationwqqq
+Skip to main content
+AI Skills Challenge
+Sep 24 – Nov 1, 2024
+
+Learn
+Sign in
+"connection string"
+Clear all
+155 results for ""connection string"" in ASP.NET Documentation
+or view all results on Microsoft Learn
+
+Automate Everything (Building Real-World Cloud Apps with Azure)
+/aspnet/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/automate-everything
+Calls a locally defined function to create a connection string for each database.The application will use these connection strings to access the databases.Returns a hash table with the database server name and the connection strings.
+
+Authenticating Users with Forms Authentication (VB)
+/aspnet/mvc/overview/older-versions-1/security/authenticating-users-with-forms-authentication-vb
+Modify the ApplicationServices connection string in your web configuration (web.config) file so that it points to the production database.
+
+Understanding the Project File
+/aspnet/web-forms/overview/deployment/web-deployment-in-the-enterprise/understanding-the-project-file
+For example, you could define properties named ServerName and ConnectionString to store a static server name and connection string.
+
+Secure Applications Using Authentication and Authorization
+/aspnet/mvc/overview/older-versions-1/nerddinner/secure-applications-using-authentication-and-authorization
+The default "ApplicationServices" connection string (which is specified within the <connectionStrings> section of the web.config file) is configured to use SQL Express.
+
+Data Source Controls
+/aspnet/web-forms/overview/moving-to-aspnet-20/data-source-controls
+Storing Connection Strings Before we get into looking at how to configure data source controls, we should cover a new capability in ASP.NET 2.0 concerning connection strings.The <connectionStrings> section makes it easy to store connection strings.The snippet below adds a new connection string.
+
+Querying Data with the SqlDataSource Control (VB)
+/aspnet/web-forms/overview/data-access/accessing-the-database-directly-from-an-aspnet-page/querying-data-with-the-sqldatasource-control-vb
+The SqlDataSource, on the other hand, requires a complete connection string.This property can be assigned a complete, hard-coded connection string value or can point to a connection string in Web.config.
+
+Creating a Data Access Layer (C#)
+/aspnet/web-forms/overview/data-access/introduction/creating-a-data-access-layer-cs
+We did not have to instantiate any ADO.NET classes, we didn't have to refer to any connection strings, SQL queries, or stored procedures.
+
+ASP.NET Hosting Options (C#)
+/aspnet/web-forms/overview/older-versions-getting-started/deploying-web-site-projects/asp-net-hosting-options-cs
+The database connection string or email server used in the development environment will likely be different than the production environment.As a result, the database connection strings typically differ between development and production applications.
+
+Build RESTful APIs with ASP.NET Web API - ASP.NET 4.x
+/aspnet/web-api/overview/older-versions/build-restful-apis-with-aspnet-web-api
+Configuring destination connection string Then click OK.Creating the database The connection string you will use to connect to SQL Database in Windows Azure is shown within Default Connection textbox.Connection string pointing to SQL Database In the Preview page, click Publish.
+
+SignalR Scaleout with Azure Service Bus (SignalR 1.x)
+/aspnet/signalr/overview/older-versions/scaleout-with-windows-azure-service-bus
+Configure the Backplane In your application's Global.asax file, add the following code: Now you need to get your service bus connection string.Copy the connection string to the clipboard, then paste it into the connectionString variable.
+
+...
+...
+Previous Versions
+Blog
+Contribute
+Privacy
+Terms of Use
+Trademarks
+© Microsoft 2024
+155 results for ""connection string"" in ASP.NET Documentation
+Skip to main content
+AI Skills Challenge
+Sep 24 – Nov 1, 2024
+
+Learn
+Sign in
+"connection string"
+Clear all
+155 results for ""connection string"" in ASP.NET Documentation
+or view all results on Microsoft Learn
+
+How do I use the ComboBox Control? (C#)
+/aspnet/web-forms/overview/ajax-control-toolkit/combobox/how-do-i-use-the-combobox-control-cs
+In the Save the Connection String to the Application Configuration File step, select the option to save your connection string.
+
+How do I use the ComboBox Control? (VB)
+/aspnet/web-forms/overview/ajax-control-toolkit/combobox/how-do-i-use-the-combobox-control-vb
+In the Save the Connection String to the Application Configuration File step, select the option to save your connection string.
+
+ASP.NET Data Access - Recommended Resources
+/aspnet/whitepapers/aspnet-data-access-content-map
+SQL Server Connection Strings for ASP.NET Web Applications (MSDN).SQL Server Connection Strings for ASP.NET Web Applications (MSDN).How To: Secure Connection Strings when Using Data Source Controls (MSDN).
+
+ASP.NET Hosting Options (VB)
+/aspnet/web-forms/overview/older-versions-getting-started/deploying-web-site-projects/asp-net-hosting-options-vb
+The database connection string or email server used in the development environment will likely be different than the production environment.As a result, the database connection strings typically differ between development and production applications.
+
+ASP.NET Web Deployment using Visual Studio: Deploying to Production
+/aspnet/web-forms/overview/deployment/visual-studio-web-deployment/deploying-to-production
+In the DB Connection String Name box, leave the default value, DefaultConnection.For more information, see How to keep your ASP.NET database connection strings secure when deploying to Azure from Source on Scott Hanselman's blog. 2.
+
+ASP.NET MVC 4 Models and Data Access
+/aspnet/mvc/overview/older-versions/hands-on-labs/aspnet-mvc-4-models-and-data-access
+Add a connection string at Web.config.Configuring destination connection string Then click OK.Connection string pointing to SQL Database In the Preview page, click Publish.
+
+Deploying an ASP.NET Web Application with SQL Server Compact using Visual Studio or Visual Web Developer: Deploying to the Production Environment - 7 of 12
+/aspnet/web-forms/overview/older-versions-getting-started/deployment-to-a-hosting-provider/deployment-to-a-hosting-provider-deploying-to-the-production-environment-7-of-12
+You'll find the connection strings you need in the drop-down lists.In the connection string box for SchoolContext, select Data Source=|DataDirectory|School-Prod.sdf Under SchoolContext, select Apply Code First Migrations.
+
+DataGrid controls display incorrectly in pages - ASP.NET
+/troubleshoot/developer/webapps/aspnet/development/datagrid-control-display-incorrectly
+Modify the connection string as appropriate for your environment.
+
+Deploying an ASP.NET Web Application with SQL Server Compact using Visual Studio or Visual Web Developer: Troubleshooting (12 of 12)
+/aspnet/web-forms/overview/older-versions-getting-started/deployment-to-a-hosting-provider/deployment-to-a-hosting-provider-creating-and-installing-deployment-packages-12-of-12
+Model Compatibility Cannot be Checked Scenario You updated the Web.config file connection string to point to a new SQL Server Express database, and the first time you run the application you see the following error message: Possible Cause and Solution If the database name you put in the Web.config file
+
+Older Versions - Data Access
+/aspnet/web-forms/overview/data-access/
+Strings and Other Configuration Information (C#) Debugging Stored Procedures (C#) Creating Stored Procedures and User-Defined Functions with Managed Code (C#) Creating New Stored Procedures for the Typed DataSet's TableAdapters (VB) Using Existing Stored Procedures for the Typed DataSet's TableAdapters
+
+...
+...
+Previous Versions
+Blog
+Contribute
+Privacy
+Terms of Use
+Trademarks
+© Microsoft 2024
+155 results for ""connection string"" in ASP.NET Documentation
+Skip to main content
+AI Skills Challenge
+Sep 24 – Nov 1, 2024
+
+Learn
+Sign in
+"connection string"
+Clear all
+155 results for ""connection string"" in ASP.NET Documentation
+or view all results on Microsoft Learn
+
+Older Versions - Data Access
+/aspnet/web-forms/overview/data-access/
+Strings and Other Configuration Information (C#) Debugging Stored Procedures (C#) Creating Stored Procedures and User-Defined Functions with Managed Code (C#) Creating New Stored Procedures for the Typed DataSet's TableAdapters (VB) Using Existing Stored Procedures for the Typed DataSet's TableAdapters
+
+Deploying a Database (C#)
+/aspnet/web-forms/overview/older-versions-getting-started/deploying-web-site-projects/deploying-a-database-cs
+This connection string specifies, among other things, the database server, the database name, and security information.We need to update this connection string information when deploying the site to production.
+
+Running ASP.NET 1.1 with IIS 6.0
+/aspnet/whitepapers/aspnet-and-iis6
+Choosing integrated authentication for ASP.NET applications is a good choice because no credentials are ever stored within your connection string for your application.
+
+Deploying an ASP.NET Web Application with SQL Server Compact using Visual Studio or Visual Web Developer: Deploying SQL Server Compact Databases - 2 of 12
+/aspnet/web-forms/overview/older-versions-getting-started/deployment-to-a-hosting-provider/deployment-to-a-hosting-provider-deploying-sql-server-compact-databases-2-of-12
+Code First Migrations will look in the startup project to find the database connection string.Therefore you have to change the connection strings in the Web.config file so that they point to the -Dev versions of the databases.
+
+Deploying a Database (VB)
+/aspnet/web-forms/overview/older-versions-getting-started/deploying-web-site-projects/deploying-a-database-vb
+This connection string specifies, among other things, the database server, the database name, and security information.We need to update this connection string information when deploying the site to production.
+
+Configuration builders for ASP.NET
+/aspnet/config-builder
+UserSecretsConfigBuilder Warning Never store passwords, sensitive connection strings, or other sensitive data in source code.SimpleJsonConfigBuilder Warning Never store passwords, sensitive connection strings, or other sensitive data in source code.
+
+Troubleshooting the Packaging Process
+/aspnet/web-forms/overview/deployment/advanced-enterprise-web-deployment/troubleshooting-the-packaging-process
+This is the process that lets you replace your connection strings with the right settings for your target environment when you deploy the package.
+
+Interacting with the Content Page from the Master Page (C#)
+/aspnet/web-forms/overview/older-versions-getting-started/master-pages/interacting-with-the-content-page-from-the-master-page-cs
+Choose this connection string from the drop-down list, as shown in Figure 3.Specifically, we need to set its ConnectionString and UpdateCommand properties to the appropriate connection string and UPDATE statement.
+
+Appendix: The Fix It Sample Application (Building Real-World Cloud Apps with Azure)
+/aspnet/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/the-fix-it-sample-application
+In MyFixIt.WorkerRole\app.config, under connectionStrings, replace the value of the appdb connection string with the actual connection string for the SQL Database.You can get the connection string from the portal.Copy the ADO.NET connection string and paste the value into the app.config file.
+
+Interacting with the Content Page from the Master Page (VB)
+/aspnet/web-forms/overview/older-versions-getting-started/master-pages/interacting-with-the-content-page-from-the-master-page-vb
+Choose this connection string from the drop-down list, as shown in Figure 3.Specifically, we need to set its ConnectionString and UpdateCommand properties to the appropriate connection string and UPDATE statement.
+
+...
+Previous Versions
+Blog
+Contribute
+Privacy
+Terms of Use
+Trademarks
+© Microsoft 2024
+155 results for ""connection string"" in ASP.NET Documentation
+Skip to main content
+AI Skills Challenge
+Sep 24 – Nov 1, 2024
+
+Learn
+Sign in
+"connection string"
+Clear all
+155 results for ""connection string"" in ASP.NET Documentation
+or view all results on Microsoft Learn
+
+Appendix: The Fix It Sample Application (Building Real-World Cloud Apps with Azure)
+/aspnet/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/the-fix-it-sample-application
+In MyFixIt.WorkerRole\app.config, under connectionStrings, replace the value of the appdb connection string with the actual connection string for the SQL Database.You can get the connection string from the portal.Copy the ADO.NET connection string and paste the value into the app.config file.
+
+Web Deployment in the Enterprise
+/aspnet/web-forms/overview/deployment/web-deployment-in-the-enterprise/web-deployment-in-the-enterprise
+You can also manipulate the configuration settings that accompany your web deployment package, like connection strings, service endpoints, and IIS destination details.
+
+Part 4: Models and Data Access
+/aspnet/mvc/overview/older-versions/mvc-music-store/mvc-music-store-part-4
+Creating a Connection String in the web.config file We will add a few lines to the website's configuration file so that Entity Framework knows how to connect to our database.
+
+Migrating an Existing Website from SQL Membership to ASP.NET Identity - ASP.NET 4.x
+/aspnet/identity/overview/migrations/migrating-an-existing-website-from-sql-membership-to-aspnet-identity
+You can either choose to install SQL Express or as work around change the connection string to LocalDb.Open web.config and change the connection string from .SQLExpress to (LocalDb)v11.0.Remove 'User Instance=true' from the connection string.
+
+Migrating Universal Provider Data for Membership and User Profiles to ASP.NET Identity (C#) - ASP.NET 4.x
+/aspnet/identity/overview/migrations/migrating-universal-provider-data-for-membership-and-user-profiles-to-aspnet-identity
+To reference that, update the connection string in the app.config file of the console application with the connection string in the web.config of the web application.
+
+Accessing your Model's Data from a Controller (C#)
+/aspnet/mvc/overview/older-versions/getting-started-with-aspnet-mvc3/cs/accessing-your-models-data-from-a-controller
+Among other benefits, this means that you get compile-time checking of the code and full IntelliSense support in the code editor: Working with SQL Server Compact Entity Framework Code First detected that the database connection string that was provided pointed to a Movies database that didn't exist yet,
+
+Configuration and Instrumentation
+/aspnet/web-forms/overview/moving-to-aspnet-20/configuration-and-instrumentation
+Both the LocalSqlServer connection string and the SqlProvider are configured in the global Web.config file.This rule will log all the events based on WebBaseEvent and send them to the MySqlWebEventProvider that will use the MYASPNETDB connection string.
+
+ASP.NET Web Deployment using Visual Studio: Preparing for Database Deployment
+/aspnet/web-forms/overview/deployment/visual-studio-web-deployment/preparing-databases
+Code First Migrations will look in the startup project to find the database connection string.When that class is in a class library project, Code First Migrations looks for the database connection string in the startup project for the solution.
+
+Hands on Lab: Maintainable Azure Websites: Managing Change and Scale
+/aspnet/aspnet/overview/developing-apps-with-windows-azure/maintainable-azure-websites-managing-change-and-scale
+In this case, it will create the database using the connection string defined in your web.config file.In the Dashboard page, click View connection strings link under the quick glance section.View connection strings Copy the connection string value and close the dialog box.
+
+Implementing Inheritance with the Entity Framework in an ASP.NET MVC Application (8 of 10)
+/aspnet/mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/implementing-inheritance-with-the-entity-framework-in-an-asp-net-mvc-application
+If you get migration errors you can't resolve, you can continue with the tutorial by changing the connection string in the Web.config file or deleting the database.
+
+...
+Previous Versions
+Blog
+Contribute
+Privacy
+Terms of Use
+Trademarks
+© Microsoft 2024
+155 results for ""connection string"" in ASP.NET Documentation
+
+
+Skip to main content
+AI Skills Challenge
+Sep 24 – Nov 1, 2024
+
+Learn
+Sign in
+"connection string"
+Clear all
+155 results for ""connection string"" in ASP.NET Documentation
+or view all results on Microsoft Learn
+
+Implementing Inheritance with the Entity Framework in an ASP.NET MVC Application (8 of 10)
+/aspnet/mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/implementing-inheritance-with-the-entity-framework-in-an-asp-net-mvc-application
+If you get migration errors you can't resolve, you can continue with the tutorial by changing the connection string in the Web.config file or deleting the database.
+
+ASP.NET Web Pages (Razor) API Quick Reference
+/aspnet/web-pages/overview/api-reference/asp-net-web-pages-api-reference
+Database.OpenConnectionString(connectionString) Opens a database using the connection string.(This contrasts with Database.Open, which uses a connection string name.)
+
+Using SignalR performance counters in an Azure Web Role
+/aspnet/signalr/overview/performance/using-signalr-performance-counters-in-an-azure-web-role
+To test your application in the cloud, update the ServiceConfiguration.Cloud.cscfg file and set the Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString to a valid Azure Storage account connection string.
+
+Accessing your Model's Data from a Controller (VB)
+/aspnet/mvc/overview/older-versions/getting-started-with-aspnet-mvc3/vb/accessing-your-models-data-from-a-controller
+Among other benefits, this means that you get compile-time checking of the code and full IntelliSense support in the code editor: Working with SQL Server Compact Entity Framework Code First detected that the database connection string that was provided pointed to a Movies database that didn't exist yet,
+
+Adding a New Field
+/aspnet/mvc/overview/getting-started/introduction/adding-a-new-field
+If you get an error indicating "Cannot attach the file .mdf as database", remove the Initial Catalog property as part of the connection string in the web.config file.
+
+Logging Error Details with ASP.NET Health Monitoring (C#)
+/aspnet/web-forms/overview/older-versions-getting-started/deploying-web-site-projects/logging-error-details-with-asp-net-health-monitoring-cs
+The "SqlWebEventProvider" configuration specifies the database's connection string (connectionStringName) among other configuration options.
+
+Creating a Data Access Layer (VB)
+/aspnet/web-forms/overview/data-access/introduction/creating-a-data-access-layer-vb
+We did not have to instantiate any ADO.NET classes, we didn't have to refer to any connection strings, SQL queries, or stored procedures.
+
+Configuring Permissions for Team Build Deployment
+/aspnet/web-forms/overview/deployment/configuring-team-foundation-server-for-web-deployment/configuring-permissions-for-team-build-deployment
+You also need to include the SQL Server user name and password in the connection string you use to deploy the database.
+
+Tutorial: Implement Inheritance with EF in an ASP.NET MVC 5 appS
+/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/implementing-inheritance-with-the-entity-framework-in-an-asp-net-mvc-application
+If you get migration errors you can't resolve, you can continue with the tutorial by changing the connection string in the Web.config file or by deleting the database.
+
+ASP.NET Web Deployment - Recommended Resources
+/aspnet/whitepapers/aspnet-web-deployment-content-map
+Windows Azure Web Sites: How Application Strings and Connection Strings Work (Microsoft Azure blog).Windows Azure Web Sites: How Application Strings and Connection Strings Work (Microsoft Azure blog).
+
+...
+Previous Versions
+Blog
+Contribute
+Privacy
+Terms of Use
+Trademarks
+© Microsoft 2024
+155 results for ""connection string"" in ASP.NET Documentation
+Skip to main content
+AI Skills Challenge
+Sep 24 – Nov 1, 2024
+
+Learn
+Sign in
+"connection string"
+Clear all
+155 results for ""connection string"" in ASP.NET Documentation
+or view all results on Microsoft Learn
+
+Logging Error Details with ASP.NET Health Monitoring (VB)
+/aspnet/web-forms/overview/older-versions-getting-started/deploying-web-site-projects/logging-error-details-with-asp-net-health-monitoring-vb
+The "SqlWebEventProvider" configuration specifies the database's connection string (connectionStringName) among other configuration options.
+
+UI and Navigation
+/aspnet/web-forms/overview/getting-started/getting-started-with-aspnet-45-web-forms/ui_and_navigation
+Reviewing the Database Open the Web.config file and look at the connection string section.You can see that the AttachDbFilename value in the connection string points to the DataDirectory for the Web application project.
+
+Accessing Your Model's Data from a New Controller
+/aspnet/mvc/overview/getting-started/introduction/accessing-your-models-data-from-a-controller
+Among other benefits, this means that you get compile-time checking of the code and full IntelliSense support in the code editor: Working with SQL Server LocalDB Entity Framework Code First detected that the database connection string that was provided pointed to a Movies database that didn't exist yet,
+
+ASP.NET Identity Recommended Resources - ASP.NET 4.x
+/aspnet/identity/overview/getting-started/aspnet-identity-recommended-resources
+ASP.NET Identity with the Entity Framework Individual User Accounts in MVC 5, Web API and SPA apps, connection strings and managing contexts Customization Options With ASP.NET Identity Implementing ASP.NET Identity Benjamin DayWalkthrough: ASP.NET MVC Identity with Microsoft Account Authentication Brock
+
+Data Storage Options (Building Real-World Cloud Apps with Azure)
+/aspnet/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/data-storage-options
+Click a button and you get the exact connection string you need and can immediately start using the new database.That name refers to a connection string that is defined in the Web.config file.
+
+Debugging Stored Procedures (C#)
+/aspnet/web-forms/overview/data-access/advanced-data-access-scenarios/debugging-stored-procedures-cs
+Note Once you have finished debugging SQL Server through the ASP.NET application be sure to reinstate connection pooling by removing the Pooling setting from the connection string (or by setting it to Pooling=true ).
+
+Customizing Database Deployments for Multiple Environments
+/aspnet/web-forms/overview/deployment/advanced-enterprise-web-deployment/customizing-database-deployments-for-multiple-environments
+If you use the split project file approach described in Understanding the Project File, you should divide your build instructions and properties between the two files accordingly: Environment-specific settings, like the deployment configuration filename, the database connection string, and the target
+
+Deploying Web Packages
+/aspnet/web-forms/overview/deployment/web-deployment-in-the-enterprise/deploying-web-packages
+You need to either use SQL Server credentials in your deployment connection string or supply basic authentication credentials to Web Deploy.
+
+WebMatrix 1.0 Release Readme
+/aspnet/web-pages/readme/overview
+Change the database name in the connection string in the web.config file back to the original database name.
+
+ASP.NET MVC 4 Beta Release Notes
+/aspnet/whitepapers/mvc4-beta-release-notes
+C# Project templates for Visual Studio 11 Beta contain an incorrect connection string in Global.asax.cs.
+
+...
+Previous Versions
+Blog
+Contribute
+Privacy
+Terms of Use
+Trademarks
+© Microsoft 2024
+155 results for ""connection string"" in ASP.NET Documentation
+Skip to main content
+AI Skills Challenge
+Sep 24 – Nov 1, 2024
+
+Learn
+Sign in
+"connection string"
+Clear all
+155 results for ""connection string"" in ASP.NET Documentation
+or view all results on Microsoft Learn
+
+ASP.NET MVC 4 Beta Release Notes
+/aspnet/whitepapers/mvc4-beta-release-notes
+C# Project templates for Visual Studio 11 Beta contain an incorrect connection string in Global.asax.cs.
+
+Enable Automated Unit Testing
+/aspnet/mvc/overview/older-versions-1/nerddinner/enable-automated-unit-testing
+Our NerdDinner application is using a connection-string to a local SQL Server Express file which lives under the \App_Data directory of the NerdDinner application project.
+
+Understanding the Build Process
+/aspnet/web-forms/overview/deployment/web-deployment-in-the-enterprise/understanding-the-build-process
+It uses the VSDBCMD.exe utility to deploy each database project in the solution, using various properties from the project files—a target connection string and a database name—together with the .deploymanifest file.
+
+Storing Additional User Information (C#)
+/aspnet/web-forms/overview/older-versions-security/membership/storing-additional-user-information-cs
+We have already defined a connection string in Web.config for the SecurityTutorials database.This connection string name – SecurityTutorialsConnectionString – should be in the drop-down list.Next, the connection string is retrieved from Web.config and the INSERT statement is specified.
+
+Displaying a Custom Error Page (VB)
+/aspnet/web-forms/overview/older-versions-getting-started/deploying-web-site-projects/displaying-a-custom-error-page-vb
+For example, calling a SqlConnection object's Open method establishes a connection to the database specified by a connection string.However, if the database is down or if the credentials in the connection string are invalid then the Open method throws a SqlException.
+
+Overview of Custom Storage Providers for ASP.NET Identity - ASP.NET 4.x
+/aspnet/identity/overview/extensibility/overview-of-custom-storage-providers-for-aspnet-identity
+If needed, add the connection string to the Web.config file.
+
+Checkout and Payment with PayPal
+/aspnet/web-forms/overview/getting-started/getting-started-with-aspnet-45-web-forms/checkout-and-payment-with-paypal
+By modifying the default connection string, the membership database will be created the next time the application runs.Update the default connection string so that it appears as follows: Integrating PayPal PayPal is a web-based billing platform that accepts payments by online merchants.
+
+Debugging Stored Procedures (VB)
+/aspnet/web-forms/overview/data-access/advanced-data-access-scenarios/debugging-stored-procedures-vb
+Note Once you have finished debugging SQL Server through the ASP.NET application be sure to reinstate connection pooling by removing the Pooling setting from the connection string (or by setting it to Pooling=true ).
+
+Storing Additional User Information (VB)
+/aspnet/web-forms/overview/older-versions-security/membership/storing-additional-user-information-vb
+We have already defined a connection string in Web.config for the SecurityTutorials database.This connection string name – SecurityTutorialsConnectionString – should be in the drop-down list.Next, the connection string is retrieved from Web.config and the INSERT statement is specified.
+
+Displaying a Custom Error Page (C#)
+/aspnet/web-forms/overview/older-versions-getting-started/deploying-web-site-projects/displaying-a-custom-error-page-cs
+For example, calling a SqlConnection object's Open method establishes a connection to the database specified by a connection string.However, if the database is down or if the credentials in the connection string are invalid then the Open method throws a SqlException.
+
+...
+Previous Versions
+Blog
+Contribute
+Privacy
+Terms of Use
+Trademarks
+© Microsoft 2024
+155 results for ""connection string"" in ASP.NET Documentation
+Skip to main content
+AI Skills Challenge
+Sep 24 – Nov 1, 2024
+
+Learn
+Sign in
+"connection string"
+Clear all
+155 results for ""connection string"" in ASP.NET Documentation
+or view all results on Microsoft Learn
+
+Processing Unhandled Exceptions (C#)
+/aspnet/web-forms/overview/older-versions-getting-started/deploying-web-site-projects/processing-unhandled-exceptions-cs
+For example, if there is an error in connecting to the database then you'll need to double check your connection string and, perhaps, open a support ticket with your web hosting company.
+
+Application Lifecycle Management: From Development to Production
+/aspnet/web-forms/overview/deployment/deploying-web-applications-in-enterprise-scenarios/application-lifecycle-management-from-development-to-production
+These contain settings that are specific to the test environment and the staging environment respectively, like connection strings, service endpoints, and the details of the remote service that will receive the web package.
+
+Configuring a Database Server for Web Deploy Publishing
+/aspnet/web-forms/overview/deployment/configuring-server-environments-for-web-deployment/configuring-a-database-server-for-web-deploy-publishing
+The next procedure assumes that you want to use Windows credentials, but there's nothing stopping you from specifying a SQL Server user name and password in your connection string when you configure the deployment.
+
+Creating Stored Procedures and User-Defined Functions with Managed Code (VB)
+/aspnet/web-forms/overview/data-access/advanced-data-access-scenarios/creating-stored-procedures-and-user-defined-functions-with-managed-code-vb
+Open the Web.config file in the website and change the NORTHWNDConnectionString value so that the connection string reads: Data Source=localhost\SQLExpress;Initial Catalog=Northwind;Integrated Security=True.The connection string shown above disables connection pooling ( Pooling=false ).
+
+Interacting with the Master Page from the Content Page (C#)
+/aspnet/web-forms/overview/older-versions-getting-started/master-pages/interacting-with-the-master-page-from-the-content-page-cs
+Because this is the first time we've used this database, the wizard will offer to store the connection string in Web.config.Have it store the connection string using the name NorthwindConnectionString.
+
+Creating Stored Procedures and User-Defined Functions with Managed Code (C#)
+/aspnet/web-forms/overview/data-access/advanced-data-access-scenarios/creating-stored-procedures-and-user-defined-functions-with-managed-code-cs
+Open the Web.config file in the website and change the NORTHWNDConnectionString value so that the connection string reads: Data Source=localhost\SQLExpress;Initial Catalog=Northwind;Integrated Security=True.The connection string shown above disables connection pooling ( Pooling=false ).
+
+Tutorial: Create a more complex data model for an ASP.NET MVC app
+/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-a-more-complex-data-model-for-an-asp-net-mvc-application
+If you get migration errors you can't resolve, you can either change the database name in the connection string or delete the database.
+
+Hands On Lab: Real-Time Web Applications with SignalR
+/aspnet/signalr/overview/getting-started/real-time-web-applications-with-signalr
+You will first add the SignalR.SqlServer NuGet package and set the connection string to your backplane database.
+
+Interacting with the Master Page from the Content Page (VB)
+/aspnet/web-forms/overview/older-versions-getting-started/master-pages/interacting-with-the-master-page-from-the-content-page-vb
+Because this is the first time we've used this database, the wizard will offer to store the connection string in Web.config.Have it store the connection string using the name NorthwindConnectionString.
+
+ASP.NET MVC 4 Custom Action Filters
+/aspnet/mvc/overview/older-versions/hands-on-labs/aspnet-mvc-4-custom-action-filters
+Configuring destination connection string Then click OK.Creating the database The connection string you will use to connect to SQL Database in Windows Azure is shown within Default Connection textbox.Connection string pointing to SQL Database In the Preview page, click Publish.
+
+...
+Previous Versions
+Blog
+Contribute
+Privacy
+Terms of Use
+Trademarks
+© Microsoft 2024
+155 results for ""connection string"" in ASP.NET Documentation
+Skip to main content
+AI Skills Challenge
+Sep 24 – Nov 1, 2024
+
+Learn
+Sign in
+"connection string"
+Clear all
+155 results for ""connection string"" in ASP.NET Documentation
+or view all results on Microsoft Learn
+
+Processing Unhandled Exceptions (VB)
+/aspnet/web-forms/overview/older-versions-getting-started/deploying-web-site-projects/processing-unhandled-exceptions-vb
+For example, if there is an error in connecting to the database then you'll need to double check your connection string and, perhaps, open a support ticket with your web hosting company.
+
+Inserting, Updating, and Deleting Data with the SqlDataSource (VB)
+/aspnet/web-forms/overview/data-access/accessing-the-database-directly-from-an-aspnet-page/inserting-updating-and-deleting-data-with-the-sqldatasource-vb
+Figure 6: Create a New SqlDataSource Named ManageProductsDataSource (Click to view full-size image) From the Configure Data Source wizard, opt to use the NORTHWINDConnectionString connection string and click Next.
+
+Advanced Entity Framework Scenarios for an MVC Web Application (10 of 10)
+/aspnet/mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/advanced-entity-framework-scenarios-for-an-mvc-web-application
+(provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified) Solution: Check connection string.
+
+Data Bound Controls
+/aspnet/web-forms/overview/moving-to-aspnet-20/data-bound-controls
+If these conditions are not met, please change the connection string in the sample.Add a connection string to the web.config file as shown below: Note You may need to change the connection string based upon your environment.
+
+Creating and Managing Roles (C#)
+/aspnet/web-forms/overview/older-versions-security/roles/creating-and-managing-roles-cs
+By overwriting the LocalSqlServer connection string name value in Web.config, we can use the default registered Roles provider (AspNetSqlRoleProvider) and have it correctly work with the SecurityTutorials.mdf database.
+
+Inserting, Updating, and Deleting Data with the SqlDataSource (C#)
+/aspnet/web-forms/overview/data-access/accessing-the-database-directly-from-an-aspnet-page/inserting-updating-and-deleting-data-with-the-sqldatasource-cs
+Figure 6: Create a New SqlDataSource Named ManageProductsDataSource (Click to view full-size image) From the Configure Data Source wizard, opt to use the NORTHWINDConnectionString connection string and click Next.
+
+ASP.NET Web Forms Guidance
+/aspnet/web-forms/overview/
+Strings and Other Configuration Information (C#) Debugging Stored Procedures (C#) Creating Stored Procedures and User-Defined Functions with Managed Code (C#) Creating New Stored Procedures for the Typed DataSet's TableAdapters (VB) Using Existing Stored Procedures for the Typed DataSet's TableAdapters
+
+Tutorial: Learn about advanced EF Scenarios for an MVC 5 Web app
+/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/advanced-entity-framework-scenarios-for-an-mvc-web-application
+(provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified) Solution Check the connection string.
+
+What's New in Web Forms in ASP.NET 4.5
+/aspnet/web-forms/overview/getting-started/hands-on-labs/whats-new-in-web-forms-in-aspnet-45
+Configuring destination connection string Then click OK.Creating the database The connection string you will use to connect to SQL Database in Azure is shown within Default Connection textbox.Connection string pointing to SQL Database In the Preview page, click Publish.
+
+Caching
+/aspnet/web-forms/overview/moving-to-aspnet-20/caching
+Configuring the SqlCacheDependency Configuring the ASP.NET Configuration File In addition to adding a connection string as discussed in a previous module, you must also configure a <cache> element with a <sqlCacheDependency> element as shown below: This configuration enables a SQL cache dependency on
+
+...
+Previous Versions
+Blog
+Contribute
+Privacy
+Terms of Use
+Trademarks
+© Microsoft 2024
+155 results for ""connection string"" in ASP.NET Documentation
+Skip to main content
+AI Skills Challenge
+Sep 24 – Nov 1, 2024
+
+Learn
+Sign in
+"connection string"
+Clear all
+155 results for ""connection string"" in ASP.NET Documentation
+or view all results on Microsoft Learn
+
+What's New in ASP.NET and Web Development in Visual Studio 2012
+/aspnet/web-forms/overview/getting-started/hands-on-labs/whats-new-in-aspnet-and-web-development-in-visual-studio-2012
+Configuring destination connection string Then click OK.Creating the database The connection string you will use to connect to SQL Database in Windows Azure is shown within Default Connection textbox.Connection string pointing to SQL Database In the Preview page, click Publish.
+
+Creating a More Complex Data Model for an ASP.NET MVC Application (4 of 10)
+/aspnet/mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/creating-a-more-complex-data-model-for-an-asp-net-mvc-application
+If you get migration errors you can't resolve, you can either change the connection string in the Web.config file or delete the database.
+
+Batch Inserting (C#)
+/aspnet/web-forms/overview/data-access/working-with-batched-data/batch-inserting-cs
+The next set of tutorials explores a variety of advanced Data Access Layer scenarios, including using stored procedures in the TableAdapter s methods, configuring connection- and command-level settings in the DAL, encrypting connection strings, and more!
+
+Creating and Managing Roles (VB)
+/aspnet/web-forms/overview/older-versions-security/roles/creating-and-managing-roles-vb
+By overwriting the LocalSqlServer connection string name value in Web.config, we can use the default registered Roles provider (AspNetSqlRoleProvider) and have it correctly work with the SecurityTutorials.mdf database.
+
+Creating New Stored Procedures for the Typed DataSet's TableAdapters (C#)
+/aspnet/web-forms/overview/data-access/advanced-data-access-scenarios/creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-cs
+The connection string to the Northwind database should be listed in the drop-down list.
+
+Batch Inserting (VB)
+/aspnet/web-forms/overview/data-access/working-with-batched-data/batch-inserting-vb
+The next set of tutorials explores a variety of advanced Data Access Layer scenarios, including using stored procedures in the TableAdapter s methods, configuring connection- and command-level settings in the DAL, encrypting connection strings, and more!
+
+Creating New Stored Procedures for the Typed DataSet's TableAdapters (VB)
+/aspnet/web-forms/overview/data-access/advanced-data-access-scenarios/creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb
+The connection string to the Northwind database should be listed in the drop-down list.
+
+ASP.NET Web Forms
+/aspnet/web-forms/
+Strings and Other Configuration Information (C#) Debugging Stored Procedures (C#) Creating Stored Procedures and User-Defined Functions with Managed Code (C#) Creating New Stored Procedures for the Typed DataSet's TableAdapters (VB) Using Existing Stored Procedures for the Typed DataSet's TableAdapters
+
+What's New in ASP.NET MVC 4
+/aspnet/mvc/overview/older-versions/hands-on-labs/whats-new-in-aspnet-mvc-4
+Configuring destination connection string Then click OK.Creating the database The connection string you will use to connect to SQL Database in Windows Azure is shown within Default Connection textbox.Connection string pointing to SQL Database In the Preview page, click Publish.
+
+Building a Custom Database-Driven Site Map Provider (C#)
+/aspnet/web-forms/overview/data-access/database-driven-site-maps/building-a-custom-database-driven-site-map-provider-cs
+For example, if we were reading the category and products data directly from the database as opposed to through the architecture, we d likely want to let the page developer specify the database connection string through Web.config rather than using a hard coded value in the provider s code.
+
+...
+Previous Versions
+Blog
+Contribute
+Privacy
+Terms of Use
+Trademarks
+© Microsoft 2024
+155 results for ""connection string"" in ASP.NET Documentation
+Skip to main content
+AI Skills Challenge
+Sep 24 – Nov 1, 2024
+
+Learn
+Sign in
+"connection string"
+Clear all
+155 results for ""connection string"" in ASP.NET Documentation
+or view all results on Microsoft Learn
+
+Building a Custom Database-Driven Site Map Provider (VB)
+/aspnet/web-forms/overview/data-access/database-driven-site-maps/building-a-custom-database-driven-site-map-provider-vb
+For example, if we were reading the category and products data directly from the database as opposed to through the architecture, we d likely want to let the page developer specify the database connection string through Web.config rather than using a hard coded value in the provider s code.
+
+ASP.NET MVC 4 Fundamentals
+/aspnet/mvc/overview/older-versions/hands-on-labs/aspnet-mvc-4-fundamentals
+Configuring destination connection string Then click OK.Creating the database The connection string you will use to connect to SQL Database in Windows Azure is shown within Default Connection textbox.Connection string pointing to SQL Database In the Preview page, click Publish.
+
+Creating User Accounts (VB)
+/aspnet/web-forms/overview/older-versions-security/membership/creating-user-accounts-vb
+The Creating the Membership Schema in SQL Server tutorial showed two ways to configure the web application so that the SqlMembershipProvider would use the database selected in step 2: by modifying the LocalSqlServer connection string name; or by adding a new registered provider to the list of Membership
+
+Creating User Accounts (C#)
+/aspnet/web-forms/overview/older-versions-security/membership/creating-user-accounts-cs
+The Creating the Membership Schema in SQL Server tutorial showed two ways to configure the web application so that the SqlMembershipProvider would use the database selected in step 2: by modifying the LocalSqlServer connection string name; or by adding a new registered provider to the list of Membership
+
+Overview: ASP.NET 4 and Visual Studio 2010 Web Development
+/aspnet/whitepapers/aspnet4/overview
+As part of the package definition, you provide the connection string for your source database.
+
+...
+Previous Versions
+Blog
+Contribute
+Privacy
+Terms of Use
+Trademarks
+© Microsoft 2024
+155 results for ""connection string"" in ASP.NET Documentation

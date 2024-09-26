@@ -1,11 +1,11 @@
-﻿
-using System.Text;
+﻿using System.Text;
 
 string input = File.ReadAllText("..\\..\\..\\Search.txt");
 
 string[] lines = input.Split(new[] { Environment.NewLine }, StringSplitOptions.None);
 StringBuilder inputCleaned = new StringBuilder();
 
+// remove all lines except the title and /aspnet/ which is used to create URL.
 for (int i = 0; i < lines.Length; i++)
 {
     if (lines[i].Contains("/aspnet/"))
@@ -18,20 +18,24 @@ for (int i = 0; i < lines.Length; i++)
     }
 }
 
-//Console.WriteLine(inputCleaned.ToString());
 //File.WriteAllText("..\\..\\..\\SearchCleaned.txt", inputCleaned.ToString());
 
-// Process the cleaned input
+// Create GitHub markup, a checkbox and the title as a link to the URL.
 string[] cleanedLines = inputCleaned.ToString().Split(new[] { Environment.NewLine }, StringSplitOptions.None);
 
-for (int i = 0; i < cleanedLines.Length; i += 2)
+using (StreamWriter writer = new StreamWriter("..\\..\\..\\formatted.txt"))
 {
-    if (i + 1 < cleanedLines.Length)
+    for (int i = 0; i < cleanedLines.Length; i += 2)
     {
-        string title = cleanedLines[i].Trim();
-        string urlPath = cleanedLines[i + 1].Trim();
-        string fullUrl = "https://docs.microsoft.com/en-us" + urlPath;
+        if (i + 1 < cleanedLines.Length)
+        {
+            string title = cleanedLines[i].Trim();
+            string urlPath = cleanedLines[i + 1].Trim();
+            string fullUrl = "https://docs.microsoft.com/en-us" + urlPath;
 
-        Console.WriteLine($"- [ ] [{title}]({fullUrl})");
+            string formattedOutput = ($"- [ ] [{title}]({fullUrl})");
+            Console.WriteLine(formattedOutput);
+            writer.WriteLine(formattedOutput);
+        }
     }
 }
